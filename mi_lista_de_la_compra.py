@@ -10,6 +10,3 @@ for item in mi_lista:
     print("Necesito comprar {}".format(item))
 
 print("Esta es mi lista de la compra.")
-
-
-
