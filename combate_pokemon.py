@@ -1,5 +1,5 @@
 
-pokemon_enemigo = input("Elige un pokemon para combatir (Bulbasaur / Charmander / Squirtle): ")
+pokemon_enemigo = input("Elige un pokemon para combatir contra el (Bulbasaur / Charmander / Squirtle): ")
 
 vida_pikachu =100
 vida_enemigo = 0
