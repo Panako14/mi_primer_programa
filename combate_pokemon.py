@@ -4,6 +4,10 @@ pokemon_enemigo = input("Elige un pokemon para combatir (Bulbasaur / Charmander 
 vida_pikachu =100
 vida_enemigo = 0
 
+while pokemon_enemigo != "Bulbasaur" and pokemon_enemigo != "Charmander" and pokemon_enemigo != "Squirtle":
+    pokemon_enemigo = input("Elige un pokemon para combatir (Bulbasaur / Charmander / Squirtle): ")
+
+
 if pokemon_enemigo == "Bulbasaur":
     vida_enemigo = 100
     ataque_enemigo = 8
@@ -19,8 +23,6 @@ elif pokemon_enemigo == "Squirtle":
     ataque_enemigo = 10
     nombre_pokemon = "Squirtle"
 
-
-
 while vida_pikachu > 0 and vida_enemigo > 0:
 
     ataque_elegido = input("Elige un ataque (Chispazo / Rayo): ")
@@ -33,8 +35,11 @@ while vida_pikachu > 0 and vida_enemigo > 0:
     elif ataque_elegido == "Rayo":
         ataque_pikachu = 15
         vida_enemigo -= ataque_pikachu
+    else:
+        ataque_elegido = "descanso"
+        ataque_pikachu == 0
 
-    print("Pikachu usa el ataque {} y causa {} de daño.".format(ataque_elegido,ataque_pikachu ))
+    print("Pikachu usa {} y causa {} de daño.".format(ataque_elegido,ataque_pikachu ))
 
     print("La vida de {} es de {}.".format(nombre_pokemon, vida_enemigo))
 
